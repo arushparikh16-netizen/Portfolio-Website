@@ -1,4 +1,5 @@
-import { Github, Linkedin, Code2, Mail, Terminal, Braces } from "lucide-react";
+import { Github, Linkedin, Code2, Mail } from "lucide-react";
+import { SiCodeforces, SiGeeksforgeeks } from "react-icons/si";
 import { nav, profile } from "@/data/content";
 
 export default function Footer() {
@@ -60,14 +61,14 @@ export default function Footer() {
 {profile.social.codeforces && (
   <li>
     <a href={profile.social.codeforces} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-ink-dim transition-colors hover:text-ink">
-      <Terminal size={14} /> Codeforces
+      <SiCodeforces size={14} /> Codeforces
     </a>
   </li>
 )}
 {profile.social.gfg && (
   <li>
     <a href={profile.social.gfg} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-ink-dim transition-colors hover:text-ink">
-      <Braces size={14} /> GeeksforGeeks
+      <SiGeeksforgeeks size={14} /> GeeksforGeeks
     </a>
   </li>
 )}

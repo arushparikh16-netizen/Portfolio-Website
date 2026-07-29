@@ -102,11 +102,15 @@ export default function Hero() {
           </motion.div>
 
           <motion.div variants={item} className="mt-10 flex items-center gap-5">
-            {[
-              { href: profile.social.github, icon: Github, label: "GitHub" },
-              { href: profile.social.linkedin, icon: Linkedin, label: "LinkedIn" },
-              { href: profile.social.leetcode, icon: Code2, label: "LeetCode" },
-            ].map(({ href, icon: Icon, label }) => (
+           {[
+           { href: profile.social.github, icon: Github, label: "GitHub" },
+           { href: profile.social.linkedin, icon: Linkedin, label: "LinkedIn" },
+           { href: profile.social.leetcode, icon: Code2, label: "LeetCode" },
+           { href: profile.social.codeforces, icon: Terminal, label: "Codeforces" },
+           { href: profile.social.gfg, icon: Braces, label: "GeeksforGeeks" },
+          ]
+  .filter((s) => s.href)
+  .map(({ href, icon: Icon, label }) => (
               <a
                 key={label}
                 href={href}

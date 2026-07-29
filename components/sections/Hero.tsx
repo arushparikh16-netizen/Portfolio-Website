@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Download, Mail, Github, Linkedin, Code2, Terminal, Braces } from "lucide-react";
+import { ArrowDown, Download, Mail, Github, Linkedin, Code2 } from "lucide-react";
+import { SiCodeforces, SiGeeksforgeeks } from "react-icons/si";
 import Image from "next/image";
 import { profile } from "@/data/content";
 import MagneticButton from "@/components/ui/MagneticButton";
@@ -106,8 +107,8 @@ export default function Hero() {
            { href: profile.social.github, icon: Github, label: "GitHub" },
            { href: profile.social.linkedin, icon: Linkedin, label: "LinkedIn" },
            { href: profile.social.leetcode, icon: Code2, label: "LeetCode" },
-           { href: profile.social.codeforces, icon: Terminal, label: "Codeforces" },
-           { href: profile.social.gfg, icon: Braces, label: "GeeksforGeeks" },
+           { href: profile.social.codeforces, icon: SiCodeforces, label: "Codeforces" },
+           { href: profile.social.gfg, icon: SiGeeksforgeeks, label: "GeeksforGeeks" },
           ]
   .filter((s) => s.href)
   .map(({ href, icon: Icon, label }) => (

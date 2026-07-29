@@ -1,4 +1,4 @@
-import { Github, Linkedin, Code2, Mail } from "lucide-react";
+import { Github, Linkedin, Code2, Mail, Terminal, Braces } from "lucide-react";
 import { nav, profile } from "@/data/content";
 
 export default function Footer() {
@@ -53,15 +53,29 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href={profile.social.leetcode} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-ink-dim transition-colors hover:text-ink">
-                    <Code2 size={14} /> LeetCode
-                  </a>
-                </li>
-                <li>
-                  <a href={`mailto:${profile.email}`} className="flex items-center gap-2 text-sm text-ink-dim transition-colors hover:text-ink">
-                    <Mail size={14} /> Email
-                  </a>
-                </li>
+  <a href={profile.social.leetcode} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-ink-dim transition-colors hover:text-ink">
+    <Code2 size={14} /> LeetCode
+  </a>
+</li>
+{profile.social.codeforces && (
+  <li>
+    <a href={profile.social.codeforces} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-ink-dim transition-colors hover:text-ink">
+      <Terminal size={14} /> Codeforces
+    </a>
+  </li>
+)}
+{profile.social.gfg && (
+  <li>
+    <a href={profile.social.gfg} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-ink-dim transition-colors hover:text-ink">
+      <Braces size={14} /> GeeksforGeeks
+    </a>
+  </li>
+)}
+<li>
+  <a href={`mailto:${profile.email}`} className="flex items-center gap-2 text-sm text-ink-dim transition-colors hover:text-ink">
+    <Mail size={14} /> Email
+  </a>
+</li>
               </ul>
             </div>
           </div>

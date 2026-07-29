@@ -24,8 +24,8 @@ export const profile = {
     github: "https://github.com/TODO",
     linkedin: "https://www.linkedin.com/in/arush-parikh-a19313329",
     leetcode: "https://leetcode.com/u/arushh_1608/",
-    twitter: "", // optional
     geeksforgeeks:"https://www.geeksforgeeks.org/profile/arushpas03i",
+    codeforces: "https://codeforces.com/profile/TODO",
   },
 };
 

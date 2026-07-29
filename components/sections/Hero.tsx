@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Download, Mail, Github, Linkedin, Code2 } from "lucide-react";
+import { ArrowDown, Download, Mail, Github, Linkedin, Code2, Terminal, Braces } from "lucide-react";
 import Image from "next/image";
 import { profile } from "@/data/content";
 import MagneticButton from "@/components/ui/MagneticButton";

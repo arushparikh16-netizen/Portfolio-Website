@@ -112,7 +112,7 @@ export default function Hero() {
   ]
     .filter((s) => s.href)
     .map(({ href, icon: Icon, label }) => (
-      
+        <a
         key={label}
         href={href}
         target="_blank"

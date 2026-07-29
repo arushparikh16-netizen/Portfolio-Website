@@ -5,7 +5,7 @@
 
 export const profile = {
   name: "Arush Parikh",
-  initials: "YN",
+  initials: "AP",
   role: "Software Engineer",
   rotatingRoles: [
     "Software Engineer",

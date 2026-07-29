@@ -12,16 +12,15 @@ type Status = "idle" | "loading" | "success" | "error";
 
 export default function Contact() {
   const [status, setStatus] = useState<Status>("idle");
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
     const formData = new FormData(e.currentTarget);
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://formspree.io/f/xojgbdvk", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(formData)),
+        headers: { Accept: "application/json" },
+        body: formData,
       });
       if (!res.ok) throw new Error("Request failed");
       setStatus("success");

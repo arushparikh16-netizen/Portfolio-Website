@@ -6,7 +6,7 @@
 export const profile = {
   name: "Arush Parikh",
   initials: "AP",
-  role: "Software Engineer",
+  role: "AI/ML Engineer",
   rotatingRoles: [
     "Software Engineer",
     "AI/ML Engineer",
@@ -16,7 +16,7 @@ export const profile = {
   tagline:
     "I build software that learns — from clean backend systems to models that ship.",
   location: "Bengaluru, India", // TODO
-  email: "TODO@example.com",
+  email: "arushparikh16@gmail.com",
   resumeUrl: "/resume.pdf", // TODO: drop your resume PDF into /public/resume.pdf
   availability: "Open to SDE & AI/ML roles", // TODO
   avatarUrl: "/images/avatar.jpg", // TODO: add a photo to /public/images/avatar.jpg

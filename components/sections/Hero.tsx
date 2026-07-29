@@ -102,30 +102,31 @@ export default function Hero() {
             </MagneticButton>
           </motion.div>
 
-          <motion.div variants={item} className="mt-10 flex items-center gap-5">
-           {[
-           { href: profile.social.github, icon: Github, label: "GitHub" },
-           { href: profile.social.linkedin, icon: Linkedin, label: "LinkedIn" },
-           { href: profile.social.leetcode, icon: Code2, label: "LeetCode" },
-           { href: profile.social.codeforces, icon: SiCodeforces, label: "Codeforces" },
-           { href: profile.social.gfg, icon: SiGeeksforgeeks, label: "GeeksforGeeks" },
-          ]
-  .filter((s) => s.href)
-  .map(({ href, icon: Icon, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-cursor-hover
-                aria-label={label}
-                className="text-ink-faint transition-colors hover:text-accent-blue"
-              >
-                <Icon size={20} />
-              </a>
-            ))}
-          </motion.div>
-        </motion.div>
+          <motion.div variants={item} className="mt-10 flex items-center gap-6">
+  {[
+    { href: profile.social.github, icon: Github, label: "GitHub" },
+    { href: profile.social.linkedin, icon: Linkedin, label: "LinkedIn" },
+    { href: profile.social.leetcode, icon: Code2, label: "LeetCode" },
+    { href: profile.social.codeforces, icon: Terminal, label: "Codeforces" },
+    { href: profile.social.gfg, icon: Braces, label: "GeeksforGeeks" },
+  ]
+    .filter((s) => s.href)
+    .map(({ href, icon: Icon, label }) => (
+      
+        key={label}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cursor-hover
+        className="group flex flex-col items-center gap-1.5 text-ink-faint transition-colors hover:text-accent-blue"
+      >
+        <Icon size={20} />
+        <span className="font-mono text-[10px] uppercase tracking-wide text-ink-faint transition-colors group-hover:text-accent-blue">
+          {label}
+        </span>
+      </a>
+    ))}
+</motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}

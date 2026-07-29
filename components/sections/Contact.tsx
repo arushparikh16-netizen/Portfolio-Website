@@ -25,6 +25,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
       if (!res.ok) throw new Error("Request failed");
       setStatus("success");
       (e.target as HTMLFormElement).reset();
+      setTimeout(() => setStatus("idle"), 3500);
     } catch {
       setStatus("error");
     }

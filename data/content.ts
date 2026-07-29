@@ -14,7 +14,7 @@ export const profile = {
     "Problem Solver",
   ],
   tagline:
-    "I build software that learns — from clean backend systems to models that ship.",
+    "Software Engineer focused on DSA, AI/ML, and impactful product development.",
   location: "Bengaluru, India", // TODO
   email: "arushparikh16@gmail.com",
   resumeUrl: "/resume.pdf", // TODO: drop your resume PDF into /public/resume.pdf
@@ -22,8 +22,8 @@ export const profile = {
   avatarUrl: "/images/avatar.jpg", // TODO: add a photo to /public/images/avatar.jpg
   social: {
     github: "https://github.com/TODO",
-    linkedin: "https://linkedin.com/in/TODO",
-    leetcode: "https://leetcode.com/TODO",
+    linkedin: "www.linkedin.com/in/arush-parikh-a19313329",
+    leetcode: "https://leetcode.com/u/arushh_1608/",
     twitter: "", // optional
   },
 };

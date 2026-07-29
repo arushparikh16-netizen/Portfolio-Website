@@ -22,9 +22,10 @@ export const profile = {
   avatarUrl: "/images/avatar.jpg", // TODO: add a photo to /public/images/avatar.jpg
   social: {
     github: "https://github.com/TODO",
-    linkedin: "www.linkedin.com/in/arush-parikh-a19313329",
+    linkedin: "https://www.linkedin.com/in/arush-parikh-a19313329",
     leetcode: "https://leetcode.com/u/arushh_1608/",
     twitter: "", // optional
+    geeksforgeeks:"https://www.geeksforgeeks.org/profile/arushpas03i",
   },
 };
 

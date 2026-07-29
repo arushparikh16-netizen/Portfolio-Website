@@ -107,8 +107,8 @@ export default function Hero() {
     { href: profile.social.github, icon: Github, label: "GitHub" },
     { href: profile.social.linkedin, icon: Linkedin, label: "LinkedIn" },
     { href: profile.social.leetcode, icon: Code2, label: "LeetCode" },
-    { href: profile.social.codeforces, icon: Terminal, label: "Codeforces" },
-    { href: profile.social.gfg, icon: Braces, label: "GeeksforGeeks" },
+    { href: profile.social.codeforces, icon: SiCodeforces, label: "Codeforces" },
+    { href: profile.social.gfg, icon: SiGeeksforgeeks, label: "GeeksforGeeks" },
   ]
     .filter((s) => s.href)
     .map(({ href, icon: Icon, label }) => (

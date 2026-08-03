@@ -55,17 +55,16 @@ export const skills: SkillCategory[] = [
     label: "Languages",
     skills: [
       { name: "Python", level: 90 },
-      { name: "TypeScript", level: 80 },
-      { name: "C++", level: 75 },
-      { name: "SQL", level: 80 },
+      { name: "C++", level: 80 },
+      { name: "C", level: 80 },
     ],
   },
   {
     label: "Frontend",
     skills: [
-      { name: "React", level: 85 },
-      { name: "Next.js", level: 80 },
-      { name: "Tailwind CSS", level: 85 },
+      { name: "HTML", level: 95 },
+      { name: "CSS", level: 80 },
+      { name: "JavaScript", level: 80 },
     ],
   },
   {
@@ -79,10 +78,9 @@ export const skills: SkillCategory[] = [
   {
     label: "AI / ML",
     skills: [
-      { name: "PyTorch", level: 80 },
-      { name: "scikit-learn", level: 85 },
-      { name: "Pandas / NumPy", level: 90 },
-      { name: "LLM Tooling", level: 70 },
+      { name: "NumPy", level: 95 },
+      { name: "Pandas", level: 95 },
+      { name: "Matplotlib", level: 95 },
     ],
   },
   {

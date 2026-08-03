@@ -14,7 +14,7 @@ export const profile = {
   email: "arushparikh16@gmail.com",
   resumeUrl: "/resume.pdf", // TODO: drop your resume PDF into /public/resume.pdf
   availability: "Open to SDE & AI/ML roles",
-  avatarUrl: "/images/avatar.jpg", // TODO: add a photo to /public/images/avatar.jpg
+  avatarUrl: "/images/avatar.png", // TODO: add a photo to /public/images/avatar.jpg
   social: {
     github: "https://github.com/TODO",
     linkedin: "https://www.linkedin.com/in/arush-parikh-a19313329",

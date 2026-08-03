@@ -1,24 +1,19 @@
-// ============================================================================
-// SITE CONTENT — edit everything here. Nothing else in the codebase needs to
-// change for a content update. Replace every "TODO" with your real info.
-// ============================================================================
-
 export const profile = {
   name: "Arush Parikh",
   initials: "AP",
   role: "AI/ML Engineer",
   rotatingRoles: [
-    "Software Engineer",
-    "AI/ML Engineer",
-    "Front End Devloper",
+    "AI/ML Enginner",
+    "Software Developer",
+    "Front End Developer",
     "Problem Solver",
   ],
   tagline:
     "Software Engineer focused on DSA, AI/ML, and impactful product development.",
-  location: "Bengaluru, India", // TODO
+  location: "Bengaluru, India", 
   email: "arushparikh16@gmail.com",
   resumeUrl: "/resume.pdf", // TODO: drop your resume PDF into /public/resume.pdf
-  availability: "Open to SDE & AI/ML roles", // TODO
+  availability: "Open to SDE & AI/ML roles",
   avatarUrl: "/images/avatar.jpg", // TODO: add a photo to /public/images/avatar.jpg
   social: {
     github: "https://github.com/TODO",
@@ -32,21 +27,21 @@ export const profile = {
 export const about = {
   heading: "About",
   paragraphs: [
-    "TODO — Replace with your story. e.g. I'm a final-year Computer Science student specializing in AI & Machine Learning at Ramaiah Institute of Technology, drawn to the point where clean engineering meets applied intelligence.",
-    "TODO — What drives you. e.g. I care about building things that are fast, correct, and actually used — whether that's a production API or a model that has to behave reliably outside a notebook.",
-    "TODO — What you're aiming for. e.g. I'm looking for an SDE / AI-ML role where I can ship real systems, learn from strong engineers, and keep compounding.",
+    "I'm a 2nd year Computer Science student specializing in AI & Machine Learning at Ramaiah Institute of Technology, drawn to the point where clean engineering meets applied intelligence.",
+    "My default mode is build-first: try it, break it, understand why, rebuild it better.",
+    "I'm looking for an SDE / AI-ML role where I can ship real systems, learn from strong engineers, and keep compounding.",
   ],
   education: [
     {
       degree: "B.E. in Computer Science & Engineering (AI & ML)",
       institution: "Ramaiah Institute of Technology",
-      period: "TODO – TODO", // e.g. 2022 – 2026
-      detail: "TODO — CGPA / notable coursework / honors",
+      period: "2025-2029",
+      detail: "CGPA-9.52(1st Year)",
     },
   ],
   goals: [
-    "TODO Short-term goal, e.g. Land an SDE / AI-ML new-grad role at a product company",
-    "TODO Long-term goal, e.g. Grow into a role building ML systems at production scale",
+    "Land an SDE / AI-ML new-grad role at a product company",
+    "Grow into a role building ML systems at production scale",
   ],
 };
 

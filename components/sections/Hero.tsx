@@ -32,7 +32,7 @@ function RotatingRole() {
   }, []);
 
   return (
-    <span className="relative inline-block h-[1.2em] overflow-hidden align-bottom">
+      <span className="relative inline-block min-h-[1.2em] overflow-hidden align-bottom">
       {profile.rotatingRoles.map((role, i) => (
         <motion.span
           key={role}
@@ -132,10 +132,10 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-          className="relative mx-auto aspect-square w-full max-w-sm"
+          className="relative mx-auto aspect-square w-full max-w-sm h-[320px] sm:h-auto sm:max-w-sm"
         >
           <div className="absolute inset-0 animate-spin-slow rounded-full bg-signal-gradient opacity-25 blur-2xl" />
-          <div className="glass relative h-full w-full overflow-hidden rounded-[2rem]">
+          <div className="glass relative h-full w-full overflow-hidden rounded-[2rem] isolate">
             {profile.avatarUrl ? (
               <Image
                 src={profile.avatarUrl}
